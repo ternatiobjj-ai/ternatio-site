@@ -1,4 +1,4 @@
-name: Publicar site na HostGator
+name: Publicar Ternatio BJJ
 
 on:
   push:
@@ -8,12 +8,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Obter arquivos do repositório
+      - name: Baixar arquivos do repositório
         uses: actions/checkout@v4
 
-      - name: Publicar via FTPS
+      - name: Enviar site por FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
