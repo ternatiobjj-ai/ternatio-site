@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b10">
+  <meta name="description" content="Ternatio BJJ. Disciplina, respeito e evolução dentro e fora do tatame. Conheça a equipe e agende uma aula experimental.">
+  <title>Ternatio BJJ | Disciplina. Respeito. Evolução.</title>
+  <style>
+    :root{--bg:#080b10;--surface:#10151d;--surface2:#161d27;--line:#293341;--text:#f4f5f7;--muted:#aab4c2;--blue:#527cab;--blue2:#94b7db;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;display:block}section{scroll-margin-top:90px}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.eyebrow{color:var(--blue2);font-size:.74rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase}.section-title{font-size:clamp(2.2rem,5vw,4.4rem);line-height:1.08;letter-spacing:-.045em;margin:13px 0 22px}.lead{color:var(--muted);font-size:1.1rem;max-width:660px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border:1px solid transparent;border-radius:4px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;cursor:pointer;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{color:#08111b;background:#dcecff}.btn-primary:hover{background:#fff}.btn-outline{border-color:#748ba3;background:transparent;color:#fff}.btn-outline:hover{background:#ffffff15}
+    .header{position:sticky;top:0;z-index:20;background:#080b10ed;border-bottom:1px solid #ffffff16;backdrop-filter:blur(14px)}.header-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;white-space:nowrap}.brand-symbol{width:40px;height:40px;flex:none}.brand-name{font-size:1.08rem;font-weight:900;letter-spacing:.14em;line-height:1}.brand-name small{display:block;margin-top:6px;text-align:center;font-size:.59rem;letter-spacing:.53em}.nav{display:flex;align-items:center;gap:24px}.nav a:not(.btn){font-size:.81rem;font-weight:700;color:#c5cbd4}.nav a:hover{color:#fff}.menu-toggle{display:none;border:1px solid var(--line);color:#fff;background:transparent;border-radius:4px;padding:8px 12px;cursor:pointer}
+    .hero{position:relative;min-height:min(760px,85vh);display:flex;align-items:center;overflow:hidden;background:radial-gradient(circle at 78% 45%,#22354b 0%,transparent 35%),linear-gradient(115deg,#080b10 30%,#131e2c 100%)}.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080b10 0%,#080b10e8 34%,#080b1080 66%,#080b1040),url("assets/hero.jpg") center 43%/cover no-repeat}.hero::after{content:"";position:absolute;inset:auto 0 0;height:150px;background:linear-gradient(transparent,var(--bg))}.hero-content{position:relative;z-index:1;padding:100px 0 120px}.hero h1{max-width:750px;font-size:clamp(3.25rem,8vw,7.4rem);line-height:.96;letter-spacing:-.075em;text-transform:uppercase;margin:20px 0}.hero h1 em{font-style:normal;color:var(--blue2)}.hero p{max-width:570px;color:#dae1ea;font-size:clamp(1rem,1.8vw,1.2rem)}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.hero-note{margin-top:62px;color:#b4bfcb;font-size:.7rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase}.hero-note span{display:inline-block;width:40px;height:1px;background:var(--blue2);vertical-align:middle;margin-right:12px}
+    .values{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0d1219}.values-inner{display:grid;grid-template-columns:repeat(3,1fr)}.value{padding:25px 22px;text-align:center;text-transform:uppercase;font-size:.8rem;font-weight:800;letter-spacing:.22em}.value+.value{border-left:1px solid var(--line)}.value strong{color:var(--blue2);margin-right:10px}
+    .section{padding:110px 0}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}.photo-panel{position:relative;min-height:500px;border:1px solid var(--line);background:linear-gradient(145deg,#1c2b3a,#090c11 70%);overflow:hidden}.photo-panel::before{content:"";position:absolute;inset:0;background:url("assets/equipe.jpg") center/cover no-repeat}.photo-panel::after{content:"TERNATIO  /  BJJ";position:absolute;bottom:0;left:0;right:0;padding:20px 25px;background:linear-gradient(transparent,#06090ce8);letter-spacing:.26em;font-size:.7rem;font-weight:800}.intro-copy p:not(.eyebrow){color:var(--muted)}.rule{width:64px;height:3px;background:var(--blue);margin:28px 0}
+    .programs{background:#0d1219;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.card{min-height:310px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden;padding:28px;background:linear-gradient(145deg,#213249,#111821 65%);border:1px solid #344153}.card::before{content:"";position:absolute;width:240px;height:240px;border:1px solid #ffffff18;border-radius:50%;top:-95px;right:-75px;box-shadow:0 0 0 36px #ffffff05,0 0 0 72px #ffffff04}.card>*{position:relative}.card-number{position:absolute;top:24px;left:28px;color:var(--blue2);letter-spacing:.18em;font-weight:800;font-size:.76rem}.card h3{font-size:1.8rem;line-height:1.1;margin:0 0 12px;text-transform:uppercase}.card p{color:#c5cfdb;margin:0}
+    .benefits-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:10%;align-items:start}.benefit-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.benefit{padding:23px;border:1px solid var(--line);background:var(--surface)}.benefit i{font-style:normal;color:var(--blue2);font-weight:900}.benefit h3{font-size:1rem;margin:10px 0 6px}.benefit p{font-size:.9rem;color:var(--muted);margin:0}
+    .banner{position:relative;padding:100px 0;background:linear-gradient(110deg,#13243a,#0c1119 72%);border-top:1px solid #35455b;border-bottom:1px solid #35455b;overflow:hidden}.banner::after{content:"T";position:absolute;right:8%;top:-140px;color:#ffffff09;font-size:550px;font-weight:900;line-height:1}.banner .wrap{position:relative;z-index:1}.banner h2{font-size:clamp(2.5rem,6vw,5rem);line-height:1.03;letter-spacing:-.05em;max-width:780px;margin:15px 0 18px}.banner p{color:#cad6e5;max-width:570px}
+    .faq{max-width:800px}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:15px}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";color:var(--blue2);font-size:1.4rem;line-height:1}.faq details[open] summary::after{content:"−"}.faq details p{color:var(--muted);margin-bottom:0}
+    .contact{background:#0d1219;border-top:1px solid var(--line)}.contact-box{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:40px;border:1px solid #35455b;background:linear-gradient(120deg,#18283b,#111821)}.contact-box h2{margin:8px 0;font-size:clamp(1.8rem,4vw,3rem);line-height:1.1}.contact-box p{color:var(--muted);margin:0}.footer{padding:45px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.83rem}.footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:center;flex-wrap:wrap}.footer .brand{color:#fff}.footer small{display:block;margin-top:12px;color:#8e9aa8}
+    @media(max-width:900px){.nav{gap:13px}.nav a:not(.btn){font-size:.72rem}.nav .btn{padding:10px}.intro-grid,.benefits-grid{gap:35px}.photo-panel{min-height:400px}}
+    @media(max-width:700px){.header-inner{height:68px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:68px;left:0;right:0;background:#0d1219;border-bottom:1px solid var(--line);padding:22px 20px;flex-direction:column;align-items:stretch;gap:18px}.nav.open{display:flex}.nav .btn{width:100%}.hero{min-height:650px}.hero::before{background:linear-gradient(90deg,#080b10ea,#080b1099),url("assets/hero.jpg") center/cover no-repeat}.hero-content{padding:90px 0}.hero h1{font-size:clamp(3.1rem,14vw,5rem)}.hero-note{margin-top:40px}.values-inner{grid-template-columns:1fr}.value{padding:15px}.value+.value{border-left:0;border-top:1px solid var(--line)}.section{padding:76px 0}.intro-grid,.benefits-grid,.contact-box{grid-template-columns:1fr}.intro-copy{order:-1}.photo-panel{min-height:360px}.cards{grid-template-columns:1fr}.card{min-height:220px}.benefit-list{grid-template-columns:1fr 1fr}.banner{padding:75px 0}.contact-box{padding:26px}.contact-box .btn{justify-self:start}}
+    @media(max-width:430px){.benefit-list{grid-template-columns:1fr}.wrap{width:min(var(--max),calc(100% - 32px))}.brand-name{font-size:.93rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <!-- CONFIGURAÇÃO: substitua o valor abaixo pelo WhatsApp da equipe, apenas números, com DDI e DDD. Ex.: 5511999999999. -->
+  <div id="site-config" data-whatsapp=""></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="Ternatio BJJ — início">
+        <svg class="brand-symbol" viewBox="0 0 100 100" role="img" aria-label="Símbolo T estilizado"><path fill="#fff" d="M5 12h90L83 27H57v53l-7 8-7-8V27H17L5 12Zm20 23h14v34L25 55V35Zm36 0h14v20L61 69V35Z"/></svg>
+        <span class="brand-name">TERNATIO<small>BJJ</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <nav id="menu" class="nav" aria-label="Navegação principal">
+        <a href="#equipe">A equipe</a><a href="#modalidades">Modalidades</a><a href="#beneficios">Benefícios</a><a href="#duvidas">Dúvidas</a>
+        <a class="btn btn-primary" href="#contato">Aula experimental ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="wrap hero-content">
+        <div class="eyebrow">Ternatio Brazilian Jiu-Jitsu</div>
+        <h1>Mais que<br>um esporte.<br><em>Um estilo<br>de vida.</em></h1>
+        <p>Um espaço para evoluir no tatame e levar disciplina, respeito e confiança para além dele.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#contato">Quero conhecer a equipe ↗</a><a class="btn btn-outline" href="#modalidades">Explorar modalidades ↓</a></div>
+        <div class="hero-note"><span></span> Disciplina · Respeito · Evolução</div>
+      </div>
+    </section>
+
+    <div class="values" aria-label="Valores da equipe"><div class="wrap values-inner"><div class="value"><strong>01</strong> Disciplina</div><div class="value"><strong>02</strong> Respeito</div><div class="value"><strong>03</strong> Evolução</div></div></div>
+
+    <section id="equipe" class="section">
+      <div class="wrap intro-grid">
+        <div class="photo-panel" role="img" aria-label="Imagem da equipe Ternatio BJJ"></div>
+        <div class="intro-copy">
+          <div class="eyebrow">Nossa essência</div>
+          <h2 class="section-title">O tatame é onde tudo começa.</h2>
+          <div class="rule"></div>
+          <p>Na Ternatio BJJ, cada treino é uma oportunidade para desenvolver técnica, confiança e constância. A evolução acontece passo a passo — e ninguém precisa percorrer esse caminho sozinho.</p>
+          <p>Se você está pensando em começar ou quer seguir aprimorando seu jogo, venha conhecer a equipe.</p>
+          <a class="btn btn-outline" href="#contato">Fale com a Ternatio ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="modalidades" class="section programs">
+      <div class="wrap">
+        <div class="eyebrow">Encontre seu caminho</div>
+        <h2 class="section-title">Jiu-jitsu para evoluir.</h2>
+        <p class="lead">Conheça as possibilidades e converse com a equipe para confirmar turmas, faixas etárias e disponibilidade.</p>
+        <div class="cards">
+          <article class="card"><span class="card-number">01 / COMEÇAR</span><h3>Primeiros passos</h3><p>Descubra os fundamentos e encontre seu ritmo no tatame.</p></article>
+          <article class="card"><span class="card-number">02 / EVOLUIR</span><h3>Treino adulto</h3><p>Desenvolva técnica, condicionamento e consistência.</p></article>
+          <article class="card"><span class="card-number">03 / CRESCER</span><h3>Treino infantil*</h3><p>Uma experiência para cultivar movimento, respeito e confiança.</p></article>
+        </div>
+        <p style="color:var(--muted);font-size:.78rem;margin-top:16px">* Confirme diretamente com a equipe se há turma infantil disponível antes de publicar esta modalidade.</p>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section">
+      <div class="wrap benefits-grid">
+        <div><div class="eyebrow">Muito além da técnica</div><h2 class="section-title">Evolução que acompanha você.</h2><p class="lead">O treino convida você a enfrentar desafios com mais consciência, preparação e respeito pelo próprio processo.</p><div class="rule"></div><a class="btn btn-outline" href="#contato">Comece sua jornada ↗</a></div>
+        <div class="benefit-list">
+          <article class="benefit"><i>↗</i><h3>Autoconfiança</h3><p>Supere desafios progressivamente, dentro e fora do tatame.</p></article>
+          <article class="benefit"><i>◇</i><h3>Disciplina</h3><p>Construa hábitos com prática, atenção e constância.</p></article>
+          <article class="benefit"><i>◎</i><h3>Condicionamento</h3><p>Movimente o corpo em uma prática dinâmica e desafiadora.</p></article>
+          <article class="benefit"><i>✦</i><h3>Comunidade</h3><p>Aprenda com outras pessoas em uma jornada de evolução conjunta.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner"><div class="wrap"><div class="eyebrow">Vista a mentalidade</div><h2>Disciplina para treinar.<br>Respeito para crescer.</h2><p>A força de uma equipe está no compromisso de evoluir juntos.</p><a class="btn btn-primary" href="#contato">Agendar uma conversa ↗</a></div></section>
+
+    <section id="duvidas" class="section"><div class="wrap faq"><div class="eyebrow">Perguntas frequentes</div><h2 class="section-title">Antes de entrar no tatame.</h2>
+      <details><summary>Preciso ter experiência para começar?</summary><p>Não necessariamente. Entre em contato para saber quais turmas são adequadas para quem está começando.</p></details>
+      <details><summary>Como encontro horários e valores?</summary><p>Solicite a grade e as condições atuais diretamente à equipe pelo canal de contato informado nesta página.</p></details>
+      <details><summary>O que levar para conhecer a equipe?</summary><p>Converse com a equipe antes da visita para receber orientações sobre vestimenta e participação na aula.</p></details>
+    </div></section>
+
+    <section id="contato" class="section contact"><div class="wrap"><div class="contact-box"><div><div class="eyebrow">Próximo passo</div><h2>Seu lugar no tatame começa aqui.</h2><p>Entre em contato para confirmar horários, local e como participar de uma aula experimental.</p></div><button class="btn btn-primary whatsapp-button" type="button">Conversar no WhatsApp ↗</button></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><div><a class="brand" href="#inicio"><svg class="brand-symbol" viewBox="0 0 100 100" aria-hidden="true"><path fill="#fff" d="M5 12h90L83 27H57v53l-7 8-7-8V27H17L5 12Zm20 23h14v34L25 55V35Zm36 0h14v20L61 69V35Z"/></svg><span class="brand-name">TERNATIO<small>BJJ</small></span></a><small>Disciplina · Respeito · Evolução</small></div><span>© <span id="year"></span> Ternatio BJJ. Todos os direitos reservados.</span></div></footer>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const toggle=document.querySelector('.menu-toggle'),menu=document.getElementById('menu');
+    toggle.addEventListener('click',()=>{const opened=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));toggle.setAttribute('aria-label',opened?'Fechar menu':'Abrir menu')});
+    menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menu')}));
+    document.querySelectorAll('.whatsapp-button').forEach(button=>button.addEventListener('click',()=>{
+      const number=document.getElementById('site-config').dataset.whatsapp.replace(/\D/g,'');
+      if(!number){alert('Antes de publicar, configure o WhatsApp da equipe no atributo data-whatsapp do arquivo index.html.');return}
+      const message=encodeURIComponent('Olá! Conheci a Ternatio BJJ pelo site e gostaria de saber mais sobre as aulas.');
+      window.open('https://wa.me/'+number+'?text='+message,'_blank','noopener,noreferrer');
+    }));
+  </script>
+</body>
+</html>
